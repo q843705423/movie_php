@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body class="chl-reg" data-spm="1">
+    <div id="page" class="">
+        <div id="header" class="clearfix" data-spm="1000340">
+            <div class="logo">
+                <h1><a href="//www.taobao.com" title="淘宝网"><i class="iconfont tb-logo-cn">淘宝网</i><i
+                        class="iconfont tb-logo-url">Taobao.com</i></a></h1>
+
+
+                <div class="login-msg error" style="text-align: center;width: 880px; margin: 0 auto;">
+                    <p class="error" style="float: none;width: auto;">
+                        为确保您账户的安全及正常使用，依《网络安全法》相关要求，6月1日起会员账户需绑定手机。如您还未绑定，请尽快完成，感谢您的理解及支持！
+                    </p>
+                </div>
+
+
+                <a href="https://survey.taobao.com/survey/Q095thIx2" class="link">
+                    <i class="iconfont">&#xe61c;</i> "登录页面"改进建议
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <div id="content">
+        <div class="login-newbg"  style="background-image: url(https://img.alicdn.com/tfs/TB10lvznkyWBuNjy0FpXXassXXa-2500-600.png);height:600px;">
+        </div>
+        <div class="content-layout">
+            <div class="login-box-warp">
+                <div class="login-box no-longlogin "
+                     id="J_LoginBox">
+                    <div class="hd">
+
+                        <div class="login-switch" onselectstart="return false;">
+                            <i class="iconfont quick" id="J_Static2Quick" onclick="javascript:goldlog.record('/member.13.1','','','H46777383')">&#xe628;</i>
+                            <i class="iconfont static" id="J_Quick2Static">&#xe626;</i>
+                        </div>
+                        <div class="login-tip">
+                            <div class="poptip">
+                                <div class="poptip-arrow">
+                                    <em>hh</em>
+                                    <span>cc</span>
+                                </div>
+                                <div class="poptip-content">
+                                    <i class="iconfont">&#xe625;</i>扫码登录更安全
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="bd">
+                        <div class="static-form " id="J_StaticForm">
+                            <div class="login-title">
+
+
+                                密码登录
+
+                            </div>
+                            <form action = "login.php" method="post" id="J_Form">
+                                <div class="field ph-hide username-field ">
+                                    <label for="TPL_username_1"> <i class="iconfont" title="会员名">&#xe601;</i></label>
+                                     <input type="text"
+                                                                                    name="TPL_username" id="TPL_username_1"
+                                                                                    class="login-text J_UserName"
+                                                                                    value=""
+                                                                                    maxlength="32" tabindex="1" aria-label="会员名/邮箱/手机号"/>
+                                </div>
+                                <div class="field pwd-field">
+                                    <label id="password-label" for="TPL_password_1"><i
+                                            class="icon iconfont" title="登录密码">&#xe600;</i></label>
+                                    <span id="J_StandardPwd">
+				   <input type="password" name="TPL_password"
+                          id="TPL_password_1" class="login-text" maxlength="40" tabindex="2"
+                          autocomplete="off" aria-label="登录密码"/>
+				</span>
+                                </div>
+                                <div class="submit">
+                                    <button type="submit" class="J_Submit" tabindex="3" id="J_SubmitStatic" name = "login">登 录</button>
+                                </div>
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</body>
+</html>

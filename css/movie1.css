@@ -1,0 +1,712 @@
+body, button, input, select, textarea{
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #FFF;
+    color: #333;
+    font-size: 12px;
+    line-height: 20px;
+    display: block;
+}
+.head-wrap {
+    background-color: #fff;
+    z-index: 100;
+    border-bottom: 1px #e5e5e5 solid;
+}
+.cityBox, .cityWrap, .cityWrap_hover .cityName, .head-wrap, .head-wrap .head-content .nav-wrap .nav li.current {
+    position: relative;
+}
+.head-wrap .head-content {
+    display: block;
+    height: 72px;
+}
+.center-wrap {
+    width: 990px;
+    min-width: 990px;
+    margin: 0 auto;
+}
+.center-wrap:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+.head-wrap .head-content .logo a {
+    display: block;
+    float: left;
+    width: 150px;
+    height: 72px;
+    background: url(//gw.alicdn.com/tps/i2/TB1zoNfJVXXXXbCXVXXgap8FVXX-150-72.png) left center no-repeat;
+}
+.cityWrap {
+    float: left;
+    display: inline;
+    margin-right: 20px;
+}
+.cityWrap .cityName {
+    float: left;
+    font-size: 18px;
+    color: #333;
+    height: 45px;
+    line-height: 40px;
+    padding: 0 15px;
+    margin-top: 20px;
+}
+.cityWrap .cityName span {
+    color: #333;
+    font-family: "microsoft yahei";
+    float: left;
+    min-width: 40px;
+}
+.cityWrap .cityName .tri {
+    float: left;
+    width: 0;
+    height: 0;
+    border-width: 6px;
+    margin-left: 5px;
+    border-style: solid;
+    margin-top: 18px;
+    border-color: #333 #fff #fff;
+    font-size: 0;
+    line-height: 0;
+}
+button, input, select, textarea {
+    font-size: 100%;
+}
+.cityList {
+    display: none;
+    position: absolute;
+    width: 479px;
+    padding: 0 4px 4px 0;
+    left: 0;
+    overflow: hidden;
+    top: 65px;
+    -webkit-transform: translateZ(30px);
+    -moz-transform: translateZ(30px);
+    -ms-transform: translateZ(30px);
+    transform: translateZ(30px);
+    z-index: 300;
+}
+.cityBox {
+    background: #fff;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+.cityBox .cityTitle {
+    line-height: 39px;
+    border-bottom: 1px #e5e5e5 solid;
+    padding: 0 10px;
+}
+.head-wrap .head-content .nav-wrap {
+    float: left;
+}
+.head-wrap .head-content .nav-wrap .nav {
+    float: left;
+    padding-top: 18px;
+}
+ol, ul {
+    list-style: none;
+}
+.head-wrap .head-content .nav-wrap .nav li {
+    float: left;
+    color: #6b6b6b;
+    line-height: 42px;
+}
+.head-wrap .head-content .nav-wrap .nav li a {
+    color: #666;
+    font-size: 18px;
+    float: left;
+    padding: 0 14px;
+    margin-right: 10px;
+}
+a {
+    text-decoration: none;
+}
+.head-wrap .head-content .nav-wrap .nav li.current a {
+    border-bottom: 3px #eb002a solid;
+    color: #eb002a;
+}
+.head-wrap .head-content .entrance-wrap {
+    float: right;
+    margin-top: 17px;
+}
+.head-wrap .head-content .entrance-wrap .entrance li {
+    float: left;
+}
+.head-wrap .head-content .entrance-wrap .entrance li a.phone {
+    background-position: 8px -25px;
+}
+.head-wrap .head-content .entrance-wrap .entrance li a {
+    display: block;
+    float: left;
+    padding: 0 10px 0 24px;
+    height: 45px;
+    line-height: 45px;
+    color: #666;
+    background: url(//img.alicdn.com/tps/i3/TB1xkfzGpXXXXbcXXXXFtjPHpXX-18-302.png) no-repeat;
+}
+.head-wrap .head-content .entrance-wrap .entrance li a.service {
+    background-position: 3px -122px;
+}
+.center-wrap:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.detail-wrap {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: #42383d;
+    z-index: 1;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.detail-wrap .detail-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 2s ease;
+    z-index: -1;
+}
+.detail-wrap .detail-bg img {
+    display: block;
+    float: left;
+    position: relative;
+    left: -10%;
+    top: 0;
+    height: auto;
+    width: 120%;
+}
+.cinema-wrap img, .detail-wrap img, .groupon-wrap img, .infomation-wrapper img, .tab-movie-list img {
+    background: url(//g.alicdn.com/alipay-movie-client/movie-cdn/svgfiles/taobao-movie1.svg) center center no-repeat #fefefe;
+    border: none;
+    outline: 0;
+    font-size: 0;
+    line-height: 0;
+}
+.detail-wrap .detail-movies {
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    background: rgba(0,0,0,.3);
+    transform: translateY(-100%);
+    z-index: 10;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: all .2s ease;
+}
+.detail-movies .center-wrap {
+    position: relative;
+    top: 100px;
+}
+.center-wrap {
+    width: 990px;
+    min-width: 990px;
+    margin: 0 auto;
+}
+.detail-movies .scroll-btn {
+    display: block;
+    position: absolute;
+    width: 48px;
+    height: 68px;
+    top: 70px;
+    left: -70px;
+    background: url(//img.alicdn.com/tps/i1/TB1XmOdGXXXXXa8XVXXdGx19VXX-100-68.png) no-repeat;
+    color: #333;
+}
+.detail-wrap .detail-cont {
+    width: 100%;
+    padding-top: 10px;
+    color: #FFF;
+    transition: all .3s ease;
+}
+.detail-wrap .detail-cont .center-wrap {
+    position: relative;
+}
+.center-wrap {
+    width: 990px;
+    min-width: 990px;
+    margin: 0 auto;
+}
+.detail-wrap .detail-cont .cont-title {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border-bottom: 1px solid #7a7a7a;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    margin-bottom: 16px;
+}
+.detail-wrap .detail-cont .cont-title i {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+}
+.detail-wrap .detail-cont .cont-title .score {
+    color: #be1932;
+}
+.detail-wrap .detail-cont .cont-pic {
+    float: left;
+    width: 225px;
+}
+.detail-wrap .detail-cont .cont-pic img {
+    display: inline-block;
+    width: 210px;
+    height: 280px;
+    overflow: hidden;
+}
+.cinema-wrap img, .detail-wrap img, .groupon-wrap img, .infomation-wrapper img, .tab-movie-list img {
+    background: url(//g.alicdn.com/alipay-movie-client/movie-cdn/svgfiles/taobao-movie1.svg) center center no-repeat #fefefe;
+    border: none;
+    outline: 0;
+    font-size: 0;
+    line-height: 0;
+}
+.detail-wrap .detail-cont .cont-info {
+    float: left;
+    width: 590px;
+}
+.detail-wrap .detail-cont .cont-info li {
+    width: 100%;
+    padding-bottom: 12px;
+    display: inline-block;
+}
+.detail-wrap .detail-cont .cont-info .shrink {
+    height: 40px;
+    display: inline-block;
+
+    padding: 0;
+    transition: height .2s ease;
+}
+.detail-wrap .detail-cont .cont-info .shrink .shrink-btn {
+    word-wrap: normal;
+    white-space: nowrap;
+    float: right;
+}
+.detail-wrap .detail-cont .cont-time {
+    float: right;
+    width: 156px;
+    height: 22px;
+    text-align: right;
+    line-height: 22px;
+    font-size: 14px;
+}
+.detail-wrap .detail-cont .cont-view {
+    float: right;
+    width: 156px;
+    padding-top: 40px;
+}
+.detail-wrap .detail-cont .cont-view .float-layer-hook {
+    display: inline-block;
+    float: left;
+    margin-bottom: 20px;
+}
+.detail-wrap .detail-cont .cont-view a {
+    display: inline-block;
+    width: 156px;
+    height: 104px;
+    overflow: hidden;
+    position: relative;
+}
+.cinema-wrap img, .detail-wrap img, .groupon-wrap img, .infomation-wrapper img, .tab-movie-list img {
+    background: url(//g.alicdn.com/alipay-movie-client/movie-cdn/svgfiles/taobao-movie1.svg) center center no-repeat #fefefe;
+    border: none;
+    outline: 0;
+    font-size: 0;
+    line-height: 0;
+}
+.detail-wrap .detail-cont .cont-view a span {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(0,0,0,.5);
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    bottom: 0;
+    right: 0;
+}
+.detail-wrap .detail-cont .cont-view .float-layer-hook {
+    display: inline-block;
+    float: left;
+    margin-bottom: 20px;
+}
+.detail-wrap .detail-cont .cont-view a {
+    display: inline-block;
+    width: 156px;
+    height: 104px;
+    overflow: hidden;
+    position: relative;
+}
+.detail-wrap .detail-cont .cont-view a s {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: 30px;
+    left: 55px;
+    background: url(//img.alicdn.com/tps/i4/TB1GR_FGXXXXXbZXFXXiC47GVXX-44-44.png) no-repeat;
+}
+.detail-wrap .detail-cont .cont-view a span {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(0,0,0,.5);
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    bottom: 0;
+    right: 0;
+}
+.act-lable, a, a:link {
+    color: #eb002a;
+}
+.title-wrap {
+    width: 100%;
+    margin-top: 20px;
+}
+.center-wrap {
+    width: 990px;
+    min-width: 990px;
+    margin: 0 auto;
+}
+.title-wrap h3, .title-wrap h4, .title-wrap h5 {
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    font-size: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.center-wrap:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.schedule-wrap {
+    width: 100%;
+    position: relative;
+    min-height: 250px;
+}
+.filter-wrap {
+    widht: 100%;
+    margin-top: 20px;
+}
+.center-wrap {
+    width: 990px;
+    min-width: 990px;
+    margin: 0 auto;
+}
+.center-wrap:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.filter-wrap .filter-select {
+    padding-left: 90px;
+    background: #FFDDDC;
+    overflow: hidden;
+}
+.filter-wrap .filter-select li {
+    position: relative;
+    line-height: 25px;
+    padding: 12px 60px 12px 0;
+    clear: both;
+    background: #FFF6F5;
+    height: auto;
+}
+.filter-wrap .filter-select li:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.filter-wrap .filter-select label {
+    position: absolute;
+    width: 90px;
+    left: -90px;
+    text-align: center;
+    color: #797979;
+}
+.filter-wrap .filter-select label {
+    position: absolute;
+    width: 90px;
+    left: -90px;
+    text-align: center;
+    color: #797979;
+}
+.filter-wrap .filter-select a, .filter-wrap .filter-select label {
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    float: left;
+    white-space: nowrap;
+}
+.filter-wrap .filter-select li .select-tags {
+    width: 100%;
+    max-height: 50px;
+    _height: 50px;
+    overflow: hidden;
+}
+.filter-wrap .filter-select a.current, .filter-wrap .filter-select a:hover {
+    text-decoration: none;
+    color: #FFF;
+    background: #f42429;
+}
+.filter-wrap .filter-select a {
+    width: auto;
+    padding: 0 8px;
+    margin-left: 22px;
+    margin-top: 2px;
+    color: #4f4f4f;
+}
+.filter-wrap .filter-select a, .filter-wrap .filter-select label {
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    float: left;
+    white-space: nowrap;
+}
+.filter-wrap .filter-select a {
+    width: auto;
+    padding: 0 8px;
+    margin-left: 22px;
+    margin-top: 2px;
+    color: #4f4f4f;
+}
+.filter-wrap .filter-select a, .filter-wrap .filter-select label {
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    float: left;
+    white-space: nowrap;
+}
+.filter-wrap .filter-select li .select-show {
+    position: absolute;
+    bottom: 12px;
+    right: 18px;
+    color: #ef2e50;
+}
+.filter-wrap .filter-select a {
+    width: auto;
+    padding: 0 8px;
+    margin-left: 22px;
+    margin-top: 2px;
+    color: #4f4f4f;
+}
+.filter-wrap .filter-select a, .filter-wrap .filter-select label {
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    float: left;
+    white-space: nowrap;
+}
+.cinemabar-wrap {
+    height: 42px;
+    color: #AAA;
+    line-height: 42px;
+    margin-top: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+.center-wrap {
+    width: 990px;
+    min-width: 990px;
+    margin: 0 auto;
+}
+.cinemabar-wrap h4 {
+    display: inline-block;
+    color: #f42429;
+    font-size: 16px;
+    padding-right: 30px;
+    float: left;
+}
+.act-lable, a, a:link {
+    color: #eb002a;
+}
+.cinemabar-wrap .more {
+    display: inline-block;
+    float: right;
+}
+.cinemabar-wrap .more {
+    display: inline-block;
+    float: right;
+}
+.center-wrap:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.center-wrap {
+    width: 990px;
+    min-width: 990px;
+    margin: 0 auto;
+}
+.center-wrap:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.hall-table {
+    width: 100%;
+    color: #797979;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.hall-table thead {
+    font-size: 14px;
+    background: #EAEAEA;
+}
+.hall-table thead .hall-time, .hall-table thead .hall-type {
+    width: 14%;
+}
+.hall-table thead th {
+    height: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    font-size: 14px;
+}
+.hall-table thead .hall-name {
+    width: 10%;
+}
+.hall-table thead .hall-flow {
+    width: 18%;
+}
+.hall-table thead .hall-price {
+    width: auto;
+}
+.hall-table thead .hall-buy {
+    width: 16%;
+}
+.hall-table tbody {
+    font-size: 13px;
+}
+.hall-table tbody .hall-time {
+    font-size: 12px;
+}
+.hall-table tbody td {
+    height: 60px;
+    text-align: center;
+    line-height: 23px;
+}
+.hall-table tbody .hall-time .bold {
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    clear: both;
+}
+address, cite, dfn, em, var {
+    font-style: normal;
+}
+.hall-table tbody td {
+    height: 60px;
+    text-align: center;
+    line-height: 23px;
+}
+.hall-table .flowing-loose label {
+    color: #26bb7e;
+}
+.hall-table .flowing-wrap label {
+    height: 18px;
+    display: inline-block;
+    overflow: hidden;
+    line-height: 22px;
+}
+.hall-table .flowing-wrap .flowing-vol i {
+    display: block;
+    float: left;
+    height: 100%;
+}
+.hall-table .flowing-loose i {
+    background: #26bb7e;
+}
+.hall-table .flowing-wrap .flowing-view {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+}
+.hall-table tbody .hall-flow .icon-zoom {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(//img.alicdn.com/tps/i1/TB1x8xyGXXXXXcLXpXXsmimVFXX-100-390.png) 0 -20px no-repeat;
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+}
+.hall-table .flowing-loose i {
+    background: #26bb7e;
+}
+.hall-table .flowing-wrap .flowing-view .view-wrap {
+    width: 128px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    display: block;
+    background: #fff3f3;
+    border: 1px solid #ffd5d5;
+    z-index: 10;
+    overflow: hidden;
+}
+.hall-table tbody .hall-price {
+    line-height: 20px;
+    font-size: 12px;
+}
+.hall-table tbody td {
+    height: 60px;
+    text-align: center;
+    line-height: 23px;
+}
+.hall-table tbody .hall-price .now {
+    font-size: 18px;
+    color: #eb002a;
+    font-weight: 700;
+}
+.hall-table tbody .hall-price .old {
+    font-size: 12px;
+}
+.hall-table tbody .hall-seat .seat-btn {
+    display: inline-block;
+    width: 128px;
+    height: 33px;
+    line-height: 33px;
+    color: #fff;
+    background: #F42429;
+    overflow: hidden;
+    margin-top: 8px;
+}
+.hall-table .flowing-wrap .flowing-vol {
+    display: inline-block;
+    width: 54px;
+    height: 14px;
+    background: #EAEAEA;
+}
+
+
